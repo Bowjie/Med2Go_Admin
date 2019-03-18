@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView android:id="@+id/drugs"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="100sp"
+        android:padding="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+        android:text=" View All Orders"
+        android:textSize="27sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:onClick="druglist"
+        android:drawableStart="@drawable/ic_shopping_cart_black_24dp" />
+
+    <TextView android:id="@+id/upload_gamot"
+        android:layout_below="@+id/drugs"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="15sp"
+        android:padding="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+        android:text=" Upload Medicines"
+        android:textSize="27sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:onClick="upload_gamot"
+        android:drawableStart="@drawable/ic_attach_file_black_24dp" />
+</RelativeLayout>
+</ScrollView>
